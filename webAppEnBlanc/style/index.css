@@ -4,4 +4,8 @@
 }
 h1{
     text-align: center;
+    text-decoration: underline;
+}
+h2{
+    margin-left: 15px;
 }
