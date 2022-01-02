@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style/index.css">
-    <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
-    <title>Objectes del sistema</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../style/index.css">
+        <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+        <title>Reacció a esdeveniments</title>
+    </head>
 <body>
     <!--NAVBAR-->
 <nav class="navbar sticky-top navbar-expand-lg navbar-light">
     <div class="container-fluid">
-      <a class="d-flex align-items-center navbar-brand" href="../../index.html">
+      <a class="d-flex align-items-center navbar-brand" href="index.html">
           <img src="../media/logo.png" alt="Logo Pau Monedero" width="60" height="60" class="d-inline-block align-text-top">  
       Portfolio</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,6 +38,7 @@
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <li><a class="dropdown-item" href="objectesDelSistema.html">Objectes del sistema</a></li>
+              <li><a class="dropdown-item" href="programacioModular.html">Programació modular</a></li>
               <li><a class="dropdown-item" href="reaccioEsdeveniments.html">Reacció a esdeveniments</a></li>
             </ul>
           </li>
@@ -46,8 +47,16 @@
     </div>
   </nav>
 
-  <h1>Us de mètodes del sistema JS:</h1>
-  <a href="https://jsfiddle.net/paumonedero/6jpyfz83/2/">Exercisi amb exemples.</a>
-  <script async src="//jsfiddle.net/paumonedero/6jpyfz83/2/embed/"></script>
+  <!--COS-->
+<h1 id="titol" onclick="this.innerHTML = 'Reacció a esdeveniments (faltava el accent)'">Reaccio a esdeveniments (si em fas click en veura's el primer)</h1>
+<button id="botoTitol" type="button" class="btn ms-3 mt-4 mb-5 btn-info">També pots canviar el titol des d'aqui</button><br>
+<div class="display-flex ms-50">
+    <img id="imatge" src="https://tresubresdobles.com/wp-content/uploads/2021/04/skft-23aff38e10ee3c4e430a1f3450c4a01d.jpeg" alt="Gos amb sindria al cap">
+    <button id="boto" type="button" >Clica aqui!</button>
+    <p id="textResposta"></p>
+</div>
+
+
+<script src="../js/reaccioEsdeveniments.js"></script>
 </body>
 </html>
