@@ -51,11 +51,23 @@
 <h1 id="titol" onclick="this.innerHTML = 'Reacció a esdeveniments (faltava el accent)'">Reaccio a esdeveniments (si em fas click en veura's el primer)</h1>
 <button id="botoTitol" type="button" class="btn ms-3 mt-4 mb-5 btn-info">També pots canviar el titol des d'aqui</button><br>
 <div class="display-flex ms-50">
-    <img id="imatge" src="https://tresubresdobles.com/wp-content/uploads/2021/04/skft-23aff38e10ee3c4e430a1f3450c4a01d.jpeg" alt="Gos amb sindria al cap">
-    <button id="boto" type="button" >Clica aqui!</button>
-    <p id="textResposta"></p>
+    <img id="imatge" onclick="hanFetClick(this.id)" src="https://tresubresdobles.com/wp-content/uploads/2021/04/skft-23aff38e10ee3c4e430a1f3450c4a01d.jpeg" alt="Gos amb sindria al cap">
+    <button id="boto" onclick="hanFetClick(this.id)" type="button" >Clica aqui!</button>
 </div>
+<br><br><br>
 
+<!--LLISTA D'ELEMENTS-->
+
+<div class="container">
+  <h2><u>Llista d'elements:</u></h2>
+  <hr>
+  <ol id="llista">
+
+  </ol>
+  <hr>
+  <button onclick="afegirElement()">Afegir element</button>
+  <button onclick="eliminarElement()" class="ms-3">Eliminar element</button>
+</div>
 
 <script src="../js/reaccioEsdeveniments.js"></script>
 </body>

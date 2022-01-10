@@ -1,25 +1,31 @@
+    let i = 0;
 
     let botoTitol = document.getElementById("botoTitol");
     let titol = document.getElementById("titol");
-    let imatge = document.getElementById("imatge");
-    let boto = document.getElementById("boto");
-    let esBoto = null;
-
-    imatge.addEventListener("click", hanFetClick(false));
-    boto.addEventListener("click", hanFetClick(true));
 
     botoTitol.addEventListener("click", function(){
         titol.innerHTML = "Reacció a esdeveniments (faltava el accent)";
     });
 
 
-function hanFetClick(esBoto){
-    let resposta = document.getElementById("textResposta");
-    if(esBoto == true){
-        resposta.innerHTML = "Has clicat al boto";
-    }else if(esBoto == false){
-        resposta.innerHTML = "Has clicat a la imatge";
-    }else{
-        resposta.innerHTML = "Clica a una imatge";
-    }
+function hanFetClick(id){
+        alert("S'ha fet click a: " + id);
+}
+
+//LLISTA ELEMENTS
+function afegirElement(){
+  i++;
+  let llista = document.getElementById("llista");
+  let element = document.createElement("li");
+  element.id = "i";
+
+  llista.append(element);
+  element.append("Element "+i);
+}
+
+function eliminarElement(){
+  let element = document.getElementById(i);
+  let llista = document.getElementById("llista");
+
+  llista.removeChild(element);
 }
