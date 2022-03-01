@@ -24,8 +24,10 @@ function afegirElement(){
 }
 
 function eliminarElement(){
-  let element = document.getElementById(i);
-  let llista = document.getElementById("llista");
-
-  llista.removeChild(element);
+  let llista = document.getElementById("llista").getElementsByTagName("li");
+  let ultimElement = llista[llista.length - 1];
+  setTimeout(function(){
+    ultimElement.parentNode.removeChild(ultimElement);
+    i--;
+  }, 2000);
 }
